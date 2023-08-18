@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <div class="left">
@@ -15,13 +16,48 @@
     </div>
     <div class="right">
         <div class="text">
-            Get started!
+            This is not a real online service! You know you need something <br> like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started.
+            <br><br>
+            You <em>know you want to.</em>
         </div>
-        <div class="box">
-
-        </div>
-        <button type="submit">Create Account</button>
-        <div class="acc">Already have an account? <a href="">Log in</a></div>
+        <form action="" method="post">
+            <div class="box">
+                <div class="inside">
+                    <div class="first">
+                        <div class="cont">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name" required>
+                        </div>
+                        <div class="cont">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="cont">
+                            <label for="pas">PASSWORD</label>
+                            <input type="password" id="pas" name="password" required>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <div class="cont">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" id="last-name" name="last-name" required>
+                        </div>
+                        <div class="cont">
+                            <label for="phone-number">PHONE NUMBER</label>
+                            <input type="tel" id="phone-number" name="phone-number" required pattern="[0-9]{10}" maxlength="10" title="Enter 10 digit phone number">
+                        </div>
+                        <div class="cont">
+                            <label for="pas-conf">CONFIRM PASSWORD</label>
+                            <input type="password" id="pas-conf" name="password-conf" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button type="submit">Create Account</button>
+                <div class="acc">Already have an account? <a href="">Log in</a></div>
+            </div>
+        </form>
     </div>
 </body>
 </html>

@@ -42,16 +42,100 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
+.text{
+    font-size: 3.5vh;
+    font-weight: 500;
+    margin-left: 6vh;
+    margin-bottom: 15vh;
+} 
+
 .box{
-    border: 1px solid gray;
+    position: relative;
+    bottom: 13vh;
     border-right: none;
     border-left: none;
-    box-shadow: gray ;
-    height: 30vh;
+    box-shadow: 0 0.1vh 1vh gray;
+    height: 35vh;
     width: 100%;
 }
 
+.inside{
+    height: 100%;
+    display: flex;    
+    gap: 10vh;
+    align-items: center;
+    margin-left: 8vh;
+
+}
+
+.first,
+.second{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5vh;
+}
+
+.btn{
+    position: absolute;
+    align-self: flex-start;
+    left: 6vh;
+    bottom: 18vh;
+}
+
+button{
+    color: white;
+    background-color: #6964aa;
+    font-size: 1.8vh;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.7vh;
+    width: 12vw;
+    height: 4.5vh;
+}
+
+button:hover{
+    background-color: green;
+    color:white;
+}
+
+.acc{
+    font-size: 1.8vh;
+    position: relative;
+    top: 1.5vh;
+}
+
+a{
+   text-decoration: none;
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input{
+    width: 15vw;
+    height: 2.75vh;
+    font-size: 1.7vh;
+    border: 0.1vh solid #dee2eb;
+    border-radius: 0.5vh;
+}
+
+input:focus{
+    outline: none;
+    border: 0.1vh solid #4c77dd;
+    box-shadow: 0.1vh 0.1vh 0.35vh gray;
+}
+
+input:focus:invalid{
+    border: 0.1vh solid #e22424;
+}
+
+label{
+    font-size: 1.5vh;
+}
 
